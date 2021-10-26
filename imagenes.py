@@ -40,7 +40,7 @@ def multithreading():
 
 def multiprocessing():
    print('multiprocessing')
-   with Pool(5) as p:
+   with Pool(len(listaURL)) as p:
         p.map(descarga_url_img,listaURL)
 
 def normal():
